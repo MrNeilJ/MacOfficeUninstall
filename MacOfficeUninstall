@@ -5,33 +5,67 @@ echo "Type in user password"
 sudo -v
 
 cd /Applications
+echo "Removing Office Applications"
+sleep 1
 sudo rm -rf Microsoft\ Excel.app
+echo "Excel Removed"
 sudo rm -rf Microsoft\ Outlook.app
+echo "Outlook Removed"
 sudo rm -rf Microsoft\ PowerPoint.app
+echo "PowerPoint Removed"
 sudo rm -rf Microsoft\ Word.app
-sudo rm -rf Microsoft\ OneDrive.app
+echo "Word Removed"
+sudo rm -rf OneDrive.app
+echo "OneDrive Removed"
 sudo rm -rf Microsoft\ OneNote.app
+echo "OneNote Removed"
 
+
+echo "Applications Removed"
+sleep 1
 cd /Library
 
+echo "Removing Com Files from Library"
 rm -rf com.microsoft.errorreporting
+printf "."
 rm -rf com.microsoft.Excel
+printf "."
 rm -rf com.microsoft.netlib.shipassertprocess
+printf "."
 rm -rf com.microsoft.Office365ServiceV2
+printf "."
 rm -rf com.microsoft.Outlook
+printf "."
 rm -rf com.microsoft.Powerpoint
+printf "."
 rm -rf com.microsoft.RMS-XPCService
+printf "."
 rm -rf com.microsoft.Word
+printf "."
 rm -rf com.microsoft.onenote.mac
+printf "."
+
+sleep .5
+echo "Com File Removal Completed"
 
 cd ~/Library/Group\ Containers
 
+echo "Removing Group Containers"
 rm -rf UBF8T346G9.ms
+printf "."
 rm -rf UBF8T346G9.Office
+printf "."
 rm -rf UBF8T346G9.OfficeOsfWebHost
+printf "."
+
+echo "Group Container Removal Completed"
+sleep .5
 
 
-echo "Script Completed"
+echo "Uninstallation complete, loading website for redownload"
+sleep 1
+
+open https://www.office.com
 
 
 
