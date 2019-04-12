@@ -31,4 +31,7 @@ rm -rf UBF8T346G9.Office
 rm -rf UBF8T346G9.OfficeOsfWebHost
 
 
+echo "Script Completed"
+
+
 
