@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 echo "Type in user password"
 # Log in as Admin
