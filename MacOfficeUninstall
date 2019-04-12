@@ -20,48 +20,64 @@ echo "OneDrive Removed"
 sudo rm -rf Microsoft\ OneNote.app
 echo "OneNote Removed"
 
-
+echo ""
 echo "Applications Removed"
 sleep 1
 cd /Library
 
-echo "Removing Com Files from Library"
+echo ""
+printf "Removing Com Files from Library"
 rm -rf com.microsoft.errorreporting
 printf "."
+sleep .25
 rm -rf com.microsoft.Excel
 printf "."
+sleep .25
 rm -rf com.microsoft.netlib.shipassertprocess
 printf "."
+sleep .25
 rm -rf com.microsoft.Office365ServiceV2
 printf "."
+sleep .25
 rm -rf com.microsoft.Outlook
 printf "."
+sleep .25
 rm -rf com.microsoft.Powerpoint
 printf "."
+sleep .25
 rm -rf com.microsoft.RMS-XPCService
 printf "."
+sleep .25
 rm -rf com.microsoft.Word
 printf "."
+sleep .25
 rm -rf com.microsoft.onenote.mac
 printf "."
+sleep .25
 
 sleep .5
+echo ""
 echo "Com File Removal Completed"
 
 cd ~/Library/Group\ Containers
 
-echo "Removing Group Containers"
+echo ""
+printf "Removing Group Containers"
 rm -rf UBF8T346G9.ms
 printf "."
+sleep .25
 rm -rf UBF8T346G9.Office
 printf "."
+sleep .25
 rm -rf UBF8T346G9.OfficeOsfWebHost
 printf "."
+sleep .25
 
+echo ""
 echo "Group Container Removal Completed"
 sleep .5
 
-
+echo ""
 echo "Uninstallation complete, loading website for redownload"
 sleep 1
 
